@@ -74,6 +74,26 @@ export default defineConfig({
             { text: 'useLoading', link: '/pure-admin-vue/hooks/use-loading' },
           ]
         }
+      ],
+      '/pure-admin-nestjs/': [
+        {
+          text: 'Pure Admin NestJS',
+          items: [
+            { text: '简介', link: '/pure-admin-nestjs/intro' },
+            { text: '快速上手', link: '/pure-admin-nestjs/quick-start' }
+          ]
+        },
+        {
+          text: '教程',
+          items: [
+            { text: '框架', link: '/pure-admin-nestjs/guide/framework' },
+            { text: '环境变量', link: '/pure-admin-nestjs/guide/env' },
+            { text: '权限', link: '/pure-admin-nestjs/guide/permission' },
+            { text: '缓存', link: '/pure-admin-nestjs/guide/cache' },
+            { text: '国际化', link: '/pure-admin-nestjs/guide/locale' },
+            { text: '构建部署', link: '/pure-admin-nestjs/guide/build' },
+          ]
+        }
       ]
     },
 
