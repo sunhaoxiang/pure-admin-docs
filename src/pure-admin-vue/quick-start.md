@@ -8,14 +8,14 @@
 如果使用 `Node.js 22`，最低支持版本为 `22.11.0`
 :::
 
-在 Visual Studio Code 里安装以下扩展：
+在 `Visual Studio Code` / `Cursor` 里安装以下扩展：
 
-- ESLint
-- DotENV
-- Vue - Official
-- UnoCSS
-- Iconify IntelliSense
-- i18n Ally
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
+- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [UnoCSS](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
+- [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
+- [i18n Ally](https://marketplace.visualstudio.com/items?itemName=Lokalise.i18n-ally)
 
 ### 下载源码
 

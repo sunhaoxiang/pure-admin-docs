@@ -6,11 +6,12 @@
 
 ## 目录结构
 
-``` bash
-├── src
-│   └── locales        // 语言包目录
-│       ├── zh-CN.ts   // 简体中文包
-│       └── en-US.ts   // 英文包
+``` text
+src/locales/
+├── langs/
+│   ├── zh-CN.json   # 简体中文包
+│   └── en-US.json   # 英文包
+└── index.ts       # 语言包配置文件
 ```
 
 ## 使用方式
