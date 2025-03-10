@@ -51,6 +51,6 @@ VITE_API_URL=https://xxx.com
 - 作用：仅适用于生产环境。运行 pnpm build 时，会加载这个文件中的环境变量。
 - 用法：适合放置生产阶段的配置。
 
-::: tip 说明
+::: info 说明
 自定义环境变量，及其他环境变量相关内容，请查看 [Vite](https://cn.vitejs.dev/guide/env-and-mode.html) 文档。
 :::

@@ -43,6 +43,10 @@
 
 项目数据库使用的是 `PostgreSQL`，同时使用 `Prisma` 作为 ORM（对象关系映射）工具。项目中所有的 schema 文件都在 `prisma/schema` 文件夹中。
 
+**Prisma 官方文档（英文）：**[https://www.prisma.io/docs](https://www.prisma.io/docs)
+
+**Prisma 中文文档：**[https://prisma.yoga](https://prisma.yoga)
+
 ## 缓存
 
 项目使用 `Redis` 作为缓存数据库，并封装了一些自定义装饰器，让您可以简便的对数据进行缓存。

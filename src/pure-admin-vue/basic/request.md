@@ -1,6 +1,6 @@
 # 网络请求
 
-::: tip 说明
+::: info 说明
 项目使用 [Axios](https://axios-http.com/zh/) 做为异步请求工具，并进行了简单的封装。
 :::
 

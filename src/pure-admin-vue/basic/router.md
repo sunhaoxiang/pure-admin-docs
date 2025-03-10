@@ -1,6 +1,6 @@
 # 路由
 
-::: tip 说明
+::: info 说明
 项目路由基于插件 [Unplugin Vue Router](https://uvr.esm.is)，详细用法请查看插件文档。
 :::
 

@@ -1,6 +1,6 @@
 # 国际化
 
-::: tip 说明
+::: info 说明
 国际化使用 [nestjs-i18n](https://nestjs-i18n.com) 插件，目前集成了简体中文和英文两种语言包。
 :::
 
@@ -12,7 +12,21 @@ src/locales/
 └── en-US/   # 英文包
 ```
 
-## 使用方式
+## 在控制器中使用
+
+``` ts{7}
+import { I18n, I18nContext } from 'nestjs-i18n'
+
+@Controller('user')
+export class WelcomeController {
+  @Get()
+  async getWelcome(@I18n() i18n: I18nContext) {
+    return i18n.t('common.welcome')
+  }
+}
+```
+
+## 在服务中使用
 
 ``` ts{11}
 import { I18nService } from 'nestjs-i18n'
@@ -50,5 +64,19 @@ export class PageDto {
   @IsNumber({}, { message: i18nValidationMessage('validation.invalid', { field: 'pageSize' }) })
   @Min(1, { message: i18nValidationMessage('validation.min', { field: 'pageSize', min: 1 }) })
   pageSize?: number = 10
+}
+```
+
+## 使用当前上下文获取翻译
+
+在一些场景中，可以使用当前上下文获取翻译：
+
+``` ts
+import { I18nContext } from 'nestjs-i18n'
+
+function someFunction() {
+  // 获取当前请求的I18nContext
+  const i18n = I18nContext.current()
+  return i18n.t('common.welcome')
 }
 ```

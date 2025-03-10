@@ -91,6 +91,7 @@ export default defineConfig({
             { text: '权限', link: '/pure-admin-nestjs/guide/permission' },
             { text: '缓存', link: '/pure-admin-nestjs/guide/cache' },
             { text: '国际化', link: '/pure-admin-nestjs/guide/locale' },
+            { text: '日志', link: '/pure-admin-nestjs/guide/log' },
             { text: '构建部署', link: '/pure-admin-nestjs/guide/build' },
           ]
         }

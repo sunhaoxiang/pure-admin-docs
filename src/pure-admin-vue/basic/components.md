@@ -1,6 +1,6 @@
 # 组件库
 
-::: tip 说明
+::: info 说明
 项目组件库使用 [Ant Design Vue](https://antdv.com/components/overview-cn)，详细用法请查看文档。
 :::
 

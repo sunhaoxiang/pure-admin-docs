@@ -1,6 +1,6 @@
 # 国际化
 
-::: tip 说明
+::: info 说明
 国际化使用 [Vue I18n](https://vue-i18n.intlify.dev) 插件，目前集成了简体中文和英文两种语言包。
 :::
 
