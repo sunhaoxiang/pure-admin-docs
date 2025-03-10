@@ -80,3 +80,27 @@ function someFunction() {
   return i18n.t('common.welcome')
 }
 ```
+
+## 带参数的翻译
+
+``` json
+// zh-CN/common.json
+{
+  "welcome": "欢迎您，{name}！"
+}
+```
+
+``` ts
+import { I18nService } from 'nestjs-i18n'
+
+@Injectable()
+export class UserService {
+  constructor(
+    private readonly i18n: I18nService,
+  ) {}
+
+  async welcome() {
+    return this.i18n.t('common.welcome', { args: { name: '张三' } })
+  }
+}
+```
