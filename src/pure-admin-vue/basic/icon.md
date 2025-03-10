@@ -13,9 +13,51 @@ import { Icon } from '@/components/icon'
 </script>
 
 <template>
-  // icon 参数传入搜索到的图标名
+  <!-- icon 参数传入搜索到的图标名 -->
   <Icon icon="icon-park-outline:user" />
+
+  <!-- 设置图标大小 -->
+  <Icon icon="icon-park-outline:user" width="24" height="24" />
+  
+  <!-- 使用 CSS 单位 -->
+  <Icon icon="icon-park-outline:user" width="1.5rem" />
+  
+  <!-- 只设置一个尺寸，保持宽高比 -->
+  <Icon icon="icon-park-outline:user" height="2em" />
+  
+  <!-- 设置图标颜色 -->
+  <Icon icon="icon-park-outline:user" color="red" />
+  
+  <!-- 旋转和翻转 -->
+  <Icon icon="mdi:arrow-right" :rotate="90" />
+  <Icon icon="mdi:arrow-right" flip="horizontal" />
+  
+  <!-- 使用 CSS 类 -->
+  <Icon icon="icon-park-outline:user" class="my-icon" />
 </template>
+```
+
+## 创建动画图标
+
+``` vue
+<script setup lang="ts">
+import { Icon } from '@/components/icon'
+</script>
+
+<template>
+  <Icon icon="icon-park-outline:loading" class="spin-icon" />
+</template>
+
+<style>
+.spin-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+</style>
 ```
 
 ## 图标加载方式
@@ -38,6 +80,13 @@ export function setupIconifyOffline() {
 ```
 
 本项目已默认将 `icon-park-outline` 预加载。
+
+## 加载方式对比
+
+| 加载方式 | 优点 | 缺点 | 推荐场景 |
+| --- | --- | --- | --- |
+| 网络加载 | 按需加载，不增加项目体积 | 首次加载需请求 API | 图标种类多且分散 |
+| 预加载 | 立即显示，无需额外请求 | 增加项目体积 | 关键 UI 图标、离线应用 |
 
 ## 本地 svg 图标
 

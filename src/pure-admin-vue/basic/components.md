@@ -18,3 +18,5 @@
 - 富文本编辑器
 - 图表
 - 权限
+
+相关使用示例代码在 `src/pages/(admin)/(base-layout)/example` 目录中。

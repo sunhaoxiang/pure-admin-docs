@@ -82,3 +82,17 @@ const routeMetaConfig = [
 在 `meta` 中添加 `{ public: true }` ，可以让页面无需登录即可访问。
 
 在 `meta` 中添加 `{ permission: 'your-permission-code' }` ，可以为页面添加权限代码，同时在项目中 `用户管理` 、 `角色管理` 模块中为用户添加相应的访问权限。
+
+## 路由守卫
+
+在 `src/router/index.ts` 中设置全局路由守卫：
+
+``` ts
+router.beforeEach(async (to, from, next) => {
+  // 在这里添加你的逻辑
+}
+
+router.afterEach(async (to, from, failure) => {
+  // 在这里添加你的逻辑
+}
+```

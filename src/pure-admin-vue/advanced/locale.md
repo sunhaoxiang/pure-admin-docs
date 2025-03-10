@@ -40,6 +40,29 @@ import { i18n } from '@/locales'
 const projectName = i18n.global.t('common.projectName')
 ```
 
+## 带参数的翻译
+
+``` json
+// zh-CN.json
+{
+  "welcome": "欢迎您，{name}！"
+}
+```
+
+``` vue
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+import { ref } from 'vue'
+
+const { t } = useI18n()
+const username = ref('张三')
+</script>
+
+<template>
+  <p>{{ t('welcome', { name: username }) }}</p>
+</template>
+```
+
 ## 修改国际化配置
 
 在 `src/locales/index.ts` 中对 配置进行修改，具体 API 请查看 [Vue I18n](https://vue-i18n.intlify.dev) 文档。
