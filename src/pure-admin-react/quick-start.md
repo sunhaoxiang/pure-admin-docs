@@ -10,7 +10,6 @@
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
-- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 - [UnoCSS](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
 - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
 - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=Lokalise.i18n-ally)
@@ -18,7 +17,7 @@
 ### 下载源码
 
 ```bash
-git clone https://github.com/sunhaoxiang/pure-admin-vue.git
+git clone https://github.com/sunhaoxiang/pure-admin-react.git
 ```
 
 ### 安装依赖

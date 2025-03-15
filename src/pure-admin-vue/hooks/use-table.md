@@ -1,5 +1,7 @@
 # useTable
 
+`useTable` 是一个基于 TanStack Query (Vue Query) 和 Ant Design Vue 的自定义 Hook，用于简化表格数据的获取、分页、筛选、排序和 CRUD 操作。它提供了与 Ant Design Vue 表格组件集成的状态管理和数据流控制，同时支持数据缓存、表单集成、批量操作等功能。
+
 ## API 参考
 
 | 参数 | 类型 | 必填 | 默认值 | 描述 |

@@ -1,12 +1,12 @@
 # 组件库
 
 ::: info 说明
-项目组件库使用 [Ant Design Vue 4.0](https://antdv.com/components/overview-cn)，详细用法请查看文档。
+项目组件库使用 [Ant Design 5.0](https://ant.design/index-cn)，详细用法请查看文档。
 :::
 
 ## 系统组件
 
-本项目在 `Ant Design Vue 4.0` 的基础上，封装了一些系统组件，均在 `/src/components` 文件夹下。
+本项目在 `Ant Design 5.0` 的基础上，封装了一些系统组件，均在 `/src/components` 文件夹下。
 
 - 按钮
 - 图标

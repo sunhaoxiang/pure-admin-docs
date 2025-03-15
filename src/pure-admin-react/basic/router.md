@@ -1,7 +1,7 @@
 # 路由
 
 ::: info 说明
-项目路由基于插件 [Unplugin Vue Router](https://uvr.esm.is)，详细用法请查看插件文档。
+项目路由基于插件 [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages)，详细用法请查看插件文档。
 :::
 
 ## 基于文件的路由系统
@@ -10,41 +10,41 @@
 
 | 文件路径 | 生成的路由路径 |
 | --- | --- |
-| `src/pages/index.vue` | `/` |
-| `src/pages/about.vue` | `/about` |
-| `src/pages/user/index.vue` | `/user` |
-| `src/pages/user/[id].vue` | `/user/:id` |
-| `src/pages/setting/profile.vue` | `/setting/profile` |
+| `src/pages/index.tsx` | `/` |
+| `src/pages/about.tsx` | `/about` |
+| `src/pages/user/index.tsx` | `/user` |
+| `src/pages/user/[id].tsx` | `/user/:id` |
+| `src/pages/setting/profile.tsx` | `/setting/profile` |
 
 ## 嵌套路由
 
-当同时创建 `src/pages/user/index.vue` 和 `src/pages/user.vue` 两个文件时，会自动创建嵌套路由结构，可以用于实现布局嵌套和页面组织。
+当同时创建 `src/pages/user/index.tsx` 和 `src/pages/user.tsx` 两个文件时，会自动创建嵌套路由结构，可以用于实现布局嵌套和页面组织。
 
 ``` text
 src/pages/
-├── user.vue
+├── user.tsx
 └── user/
-    └── index.vue
+    └── index.tsx
 ```
 
 将生成以下路由结构：
 
-``` ts
+``` tsx
 const routes = [
   {
     path: '/user',
-    component: () => import('src/pages/user.vue'),
+    element: <User />,
     children: [
       {
         path: '',
-        component: () => import('src/pages/user/index.vue')
+        element: <UserIndex />
       },
     ],
   },
 ]
 ```
 
-如果去掉 `src/pages/user.vue`，将会生成以下路由结构：
+如果去掉 `src/pages/user.tsx`，将会生成以下路由结构：
 
 ``` ts
 const routes = [
@@ -54,7 +54,7 @@ const routes = [
     children: [
       {
         path: '',
-        component: () => import('src/pages/user/index.vue')
+        element: <UserIndex />
       },
     ],
   },
@@ -87,14 +87,4 @@ const routeMetaConfig = [
 
 ## 路由守卫
 
-在 `src/router/index.ts` 中设置全局路由守卫：
-
-``` ts
-router.beforeEach(async (to, from, next) => {
-  // 在这里添加你的逻辑
-}
-
-router.afterEach(async (to, from, failure) => {
-  // 在这里添加你的逻辑
-}
-```
+在 `src/components/auth-guard/AuthGuard.tsx` 中处置路由守卫相关逻辑。
