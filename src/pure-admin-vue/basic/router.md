@@ -79,9 +79,9 @@ const routeMetaConfig = [
 ]
 ```
 
-在 `meta` 中添加 `{ public: true }` ，可以让页面无需登录即可访问。
+配置 `meta.public` 为 `true` ，可以让页面无需登录即可访问。
 
-在 `meta` 中添加 `{ permission: 'your-permission-code' }` ，可以为页面添加权限代码，同时在项目中 `用户管理` 、 `角色管理` 模块中为用户添加相应的访问权限。
+配置 `meta.permission` ，可以为页面添加权限代码，同时在项目中 `用户管理` 、 `角色管理` 模块中为用户添加相应的访问权限。
 
 ## 路由守卫
 

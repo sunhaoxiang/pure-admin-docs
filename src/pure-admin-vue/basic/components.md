@@ -19,4 +19,4 @@
 - 图表
 - 权限
 
-相关使用示例代码在 `src/pages/(admin)/(base-layout)/example` 目录中。
+相关使用示例代码在 `src/pages/example` 目录中。

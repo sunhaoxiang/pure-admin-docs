@@ -15,7 +15,6 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '首页', link: '/' },
       {
         text: '文档',
         items: [
@@ -51,6 +50,7 @@ export default defineConfig({
             { text: '组件库', link: '/pure-admin-vue/basic/components' },
             { text: '环境变量', link: '/pure-admin-vue/basic/env' },
             { text: '路由', link: '/pure-admin-vue/basic/router' },
+            { text: '布局', link: '/pure-admin-vue/basic/layout' },
             { text: '图标', link: '/pure-admin-vue/basic/icon' },
             { text: '网络请求', link: '/pure-admin-vue/basic/request' },
             { text: '构建部署', link: '/pure-admin-vue/basic/build' },
