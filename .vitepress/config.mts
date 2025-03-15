@@ -88,6 +88,7 @@ export default defineConfig({
           items: [
             { text: '框架', link: '/pure-admin-nestjs/guide/framework' },
             { text: '环境变量', link: '/pure-admin-nestjs/guide/env' },
+            { text: '数据初始化', link: '/pure-admin-nestjs/guide/init-data' },
             { text: '权限', link: '/pure-admin-nestjs/guide/permission' },
             { text: '缓存', link: '/pure-admin-nestjs/guide/cache' },
             { text: '国际化', link: '/pure-admin-nestjs/guide/locale' },
