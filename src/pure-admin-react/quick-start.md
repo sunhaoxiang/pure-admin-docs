@@ -20,6 +20,18 @@
 git clone https://github.com/sunhaoxiang/pure-admin-react.git
 ```
 
+### 配置环境变量
+
+在项目根目录创建 `.env.development` 文件，并将 `.env.[mode].template` 中的所有内容复制进去，并修改相关内容：
+
+``` bash
+# 修改为你的服务运行端口
+VITE_PORT=5173
+
+# 修改为你的 API 接口地址
+VITE_API_BASEURL=http://localhost:3000
+```
+
 ### 安装依赖
 
 

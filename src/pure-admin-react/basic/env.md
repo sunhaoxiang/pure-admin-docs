@@ -2,7 +2,7 @@
 
 ## 文件
 
-环境变量位于项目根目录下 `.env` 、 `.env.development` 、 `.env.production`
+环境变量位于项目根目录下，在项目根目录创建 `.env.development` 、 `.env.production` 文件，并将 `.env.[mode].template` 中的所有内容复制进去。
 
 ::: code-group
 ```bash [.env]
