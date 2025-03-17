@@ -39,7 +39,9 @@ export default defineConfig({
           { text: 'Pure Admin Vue', link: '/pure-admin-vue/intro' },
         ]
       },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '合作', link: '/cooperate' },
+      { text: '社区', link: '/communicate' },
+      { text: '赞助', link: '/sponsor' },
     ],
 
     sidebar: {
