@@ -37,18 +37,36 @@ NODE_ENV=production pm2 start dist/src/main.js --name pure-admin-nestjs
 docker build -t pure-admin-nestjs . 
 ```
 
+### 传输到服务器
+
+``` bash
+# 保存镜像到本地
+docker save -o pure-admin-nestjs.tar pure-admin-nestjs
+
+# 传输到服务器
+scp pure-admin-nestjs.tar user@server-ip:/tmp/
+```
+
+### 在服务器上加载镜像
+
+``` bash
+docker load -i /tmp/pure-admin-nestjs.tar
+```
+
 ### 运行镜像
+
+命令参数：
+
+- `--name [你的容器名称]`
+- `-p [你要运行的端口]:3000`
+- `-v [你要在服务器上存放 logs 的路径]:/app/logs`
+
+修改参数，并运行：
 
 ``` bash
 docker run -d \
   --name pure-admin-nestjs \
   -p 3000:3000 \
-  -v /path/on/host/logs:/app/logs \
+  -v /your/app/logs:/app/logs \
   pure-admin-nestjs
 ```
-
-- 将 `--name pure-admin-nestjs` 更改为 `--name [你的容器名称]`
-- 将 `-p 3000:3000` 更改为 `-p [你要运行的端口]:3000`
-- 将 `-v /path/on/host/logs:/app/logs` 更改为 `-v [你要存放 logs 的路径]:/app/logs`
-
-然后执行命令运行服务。
