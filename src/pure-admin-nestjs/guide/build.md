@@ -24,7 +24,7 @@ pure-admin-nestjs/
 ``` bash
 pnpm i
 pnpm prisma:generate
-NODE_ENV=production pm2 start dist/src/main.js --name server
+NODE_ENV=production pm2 start dist/src/main.js --name pure-admin-nestjs
 ```
 
 ## Docker 构建
