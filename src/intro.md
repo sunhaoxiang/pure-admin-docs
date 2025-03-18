@@ -8,13 +8,13 @@
 - **前端 `React` 版本:**
 
   - [文档地址](/pure-admin-react/quick-start)
-  - [预览地址](https://github.com/sunhaoxiang)
+  - [预览地址](https://pure-admin-react.sunhaoxiang.me)
   - [Github 仓库](https://github.com/sunhaoxiang/pure-admin-react)
   
 - **前端 `Vue` 版本:**
 
   - [文档地址](/pure-admin-vue/quick-start)
-  - [预览地址](https://github.com/sunhaoxiang)
+  - [预览地址](https://pure-admin-vue.sunhaoxiang.me)
   - [Github 仓库](https://github.com/sunhaoxiang/pure-admin-vue)
 
 - **后端 `NestJS` 版本:**

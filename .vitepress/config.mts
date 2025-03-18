@@ -35,13 +35,12 @@ export default defineConfig({
       {
         text: '演示',
         items: [
-          { text: 'Pure Admin React', link: '/pure-admin-react/intro' },
-          { text: 'Pure Admin Vue', link: '/pure-admin-vue/intro' },
+          { text: 'Pure Admin React', link: 'https://pure-admin-react.sunhaoxiang.me' },
+          { text: 'Pure Admin Vue', link: 'https://pure-admin-vue.sunhaoxiang.me' },
         ]
       },
       { text: '合作', link: '/cooperate' },
-      { text: '社区', link: '/communicate' },
-      { text: '赞助', link: '/sponsor' },
+      { text: '交流群', link: '/communicate' },
     ],
 
     sidebar: {

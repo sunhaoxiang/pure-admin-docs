@@ -24,10 +24,10 @@ hero:
       link: /pure-admin-nestjs/quick-start
     - theme: preview
       text: 演示地址：React 版本 ↗
-      link: /pure-admin-react/quick-start
+      link: https://pure-admin-react.sunhaoxiang.me
     - theme: preview
       text: 演示地址：Vue 版本 ↗
-      link: /pure-admin-vue/quick-start
+      link: https://pure-admin-vue.sunhaoxiang.me
 
 features:
   - icon: 🚀
