@@ -7,6 +7,17 @@ export default defineConfig({
   srcDir: 'src',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    [
+      'script',
+      {},
+      `var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f436d7f007e9b2e1757b6841c95a4277";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();`
+    ]
   ],
   themeConfig: {
     logo: '/logo.svg',
