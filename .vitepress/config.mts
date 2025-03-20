@@ -3,10 +3,13 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Pure Admin",
-  description: "简洁优雅的管理系统",
+  description: "一款简洁优雅、功能强大且专注于用户体验的后台管理系统。 前端同时支持 React 19 / Vue 3 双版本，后端使用 NestJS 11 开发。",
   srcDir: 'src',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['meta', { name: 'keywords', content: 'pure-admin,后台系统,管理后台,后台模版,react后台,vue后台,nestjs后台,react-admin,vue-admin,nestjs-admin,react-admin-template,vue-admin-template,nestjs-admin-template' }],
+    ['keywords', { content: 'pure-admin,后台系统,管理后台,后台模版,react后台,vue后台,nestjs后台,react-admin,vue-admin,nestjs-admin,react-admin-template,vue-admin-template,nestjs-admin-template' }],
+    ['description', { content: '一款简洁优雅、功能强大且专注于用户体验的后台管理系统。 前端同时支持 React 19 / Vue 3 双版本，后端使用 NestJS 11 开发。' }],
     [
       'script',
       {},
